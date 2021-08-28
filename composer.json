@@ -1,0 +1,9 @@
+{
+  "name":"ajax_mvc/ajax_mvc",
+  "require":{
+
+  },
+  "autoload":{
+    "psr-4":{"App\\":"App/"}
+  }
+}
