@@ -17,11 +17,16 @@
     <article>
       <header>
       </header>
-      <footer>
       <!---------------------------------------------------->
       <?=$this->loadViewInTemplate($nomeView, $dadosModel);?>
       <!---------------------------------------------------->
+      <footer>
       </footer>
     </article>
+    <script src="<?=BASE_URL;?>Public/jquery/jquery.min.js"></script>
+    <script src="<?=BASE_URL;?>Public/Bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="<?=BASE_URL;?>Public/Assets/js/script.js"></script>
+    <script src="<?=BASE_URL;?>Public/Fontawesome/js/all.min.js"></script>
+    <script src="<?=BASE_URL;?>Public/Fontawesome/js/fontawesome.min.js"></script>
   </body>
 </html>
