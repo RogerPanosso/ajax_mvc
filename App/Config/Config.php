@@ -8,14 +8,13 @@
   $config = array();
 
   if(ENVIRONMENT == "development") {
-    define("BASE_URL", "http://localhost/ajax_mvc/"); //constante contendo URL base da aplicação
     $config["dbdriver"] = "mysql";
     $config["dbname"] = "projeto_ajax_mvc";
     $config["dbhost"] = "localhost";
     $config["dbuser"] = "root";
     $config["dbpass"] = "";
   }else {
-    define("BASE_URL", "http://localhost/ajax_mvc/"); //constante contendo URL base da aplicação
+    /* dados para configuração perante servidor externo */
     $config["dbdriver"] = "mysql";
     $config["dbname"] = "projeto_ajax_mvc";
     $config["dbhost"] = "localhost";

@@ -7,8 +7,6 @@
   */
   namespace App\Core;
 
-  require "../App/Config/Config.php";
-
   class Controller {
     protected array $dados;
 

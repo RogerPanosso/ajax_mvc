@@ -3,7 +3,7 @@
     <div class="row mb-0">
       <div class="col-md-12 order-1 mt-5 mb-3">
         <div class="page-header">
-          <h3 class="lead">Cadastrar Usuário.</h3>
+          <h3 class="bd-lead text-center">Cadastrar Usuário.</h3>
         </div>
       </div>
     </div>
@@ -18,10 +18,10 @@
     </div>
     <div class="row mb-0">
       <div class="col-md-12 order-1 mb-0">
-        <form id="form" method="POST" action="<?=BASE_URL;?>ajax/salvar/">
+        <form id="cadastro" method="POST" action="http://localhost/ajax_mvc/ajax/salvar">
           <div class="form-group">
             <label for="nome" class="form-label">Nome</label>
-            <input type="text" name="nome" class="form-control" placeholder="Nome" autofocus autocomplete="off" id="nome" required/>
+            <input type="text" name="nome" class="form-control" placeholder="Nome" autocomplete="off" id="nome" required/>
           </div>
           <div class="form-group">
             <label for="email" class="form-label">E-Mail</label>
