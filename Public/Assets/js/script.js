@@ -28,18 +28,19 @@ $(document).ready(function(){
     $.ajax({
       type:"POST",
       url:"http://localhost/ajax_mvc/ajax/salvarCadastro/",
+      dataType:"json",
       data:{
         nome:nome,
         email:email,
         senha:senha
       },
-      success:function(html) {
-        $("#result").html(html);
+      success:function(json) {
+        $("#result").html(json.msg);
         $("#result").css("color", "#006600");
       },
-      error:function(html) {
-        $("#result").html(html);
-        $("#result").css("color", "#FF0000");
+      error:function(json) {
+        $("#result").html(json.msg);
+        $("#result").css("color", "#888888");
       }
     });
   })

@@ -15,7 +15,7 @@
           </small>
         </div>
         <div id="result">
-
+          <!-- result da requisição interna ajax -->
         </div>
       </div>
     </div>

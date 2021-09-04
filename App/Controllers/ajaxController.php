@@ -17,16 +17,20 @@
 
     public function salvarCadastro() {
       $usuario = new Usuarios();
+      $dados = array();
       $nome = trim(filter_input(INPUT_POST, "nome", FILTER_SANITIZE_STRING));
       $email = trim(filter_input(INPUT_POST, "email", FILTER_SANITIZE_EMAIL));
       $senha = trim(filter_input(INPUT_POST, "senha", FILTER_SANITIZE_STRING));
       if($nome == true and $email == true and $senha == true) {
         $hash_senha = password_hash($senha, PASSWORD_DEFAULT);
         if($usuario->salvar($nome, $email, $hash_senha) == true) {
-          echo "Usuário cadastrado com sucesso";
+          $dados["msg"] = "Usuário cadastrado com sucesso";
         }else {
-          echo "Usuário já existente e valido";
+          $dados["msg"] = "Usuário já existente e valido";
         }
+        //retorna json
+        echo json_encode($dados);
+        exit();
       }
     }
   }
