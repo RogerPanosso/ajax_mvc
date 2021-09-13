@@ -9,6 +9,7 @@
     </div>
     <div class="row mb-0">
       <div class="col-md-12 order-1">
+        <a class="link-striped" href="http://localhost/ajax_mvc/pessoas">Pessoas</a>
         <div class="alert alert-warning fade show shadow-sm bd-lead text-center" role="alert">
           <small class="mb-0">
             Preencha os campos abaixo corretamente perante o formulário. Realizando o cadastro de usuário
