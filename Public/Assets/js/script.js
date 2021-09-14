@@ -94,8 +94,6 @@ $(document).ready(function(){
     $.ajax({
       type:"POST",
       url:"http://localhost/ajax_mvc/ajaxpessoas/salvarCadastro/",
-      contentType:false,
-      processData:false,
       data:{
         nome:nome,
         email:email,
